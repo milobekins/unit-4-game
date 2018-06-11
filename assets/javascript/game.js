@@ -42,12 +42,14 @@ $(document).ready(function() {
     function scoreCheck() {
     if (userScore === targetScore) {
         wins += 1;
+        alert("You Win!")
         resetScore();
         updateScore();
         crystalNumber();
     }
     if (userScore > targetScore) {
         losses += 1;
+        alert("You Lost")
         resetScore();
         updateScore();
         crystalNumber();
